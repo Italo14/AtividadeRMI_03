@@ -56,7 +56,7 @@ public class CalculatorImpl extends UnicastRemoteObject implements ICalculator {
         
         
        //dividindo o numero de questoes,numero de alternativas e alternativas//
-        String questao = a;
+        
         String[] Qcortada = a.split(";");
         
         //passando os dados dos vetores para as variaveis string //
@@ -74,7 +74,7 @@ public class CalculatorImpl extends UnicastRemoteObject implements ICalculator {
         int erros = 0;
         boolean referencia = false;
         
-        ////LaÁo de comparaÁ„o e contador de erros e acertos////
+        ////La√ßo de compara√ß√£o e contador de erros e acertos////
         
         if (numero_questoes.equals(G_numero_questoes))
         {
@@ -93,8 +93,8 @@ public class CalculatorImpl extends UnicastRemoteObject implements ICalculator {
         
         /////////////////////////Imprimindo Resultados////////////////////////////////////
         
-		return "Questıes recebidas: " + questao + "\n" + "Quest„o: " + numero_questoes 
-				+ " Certas: " + acertos + " Erros: " + erros;        
+		return "Quest√µes recebidas: " + a + "\n" + "Quest√£o: " + numero_questoes 
+				+ " Acertas: " + acertos + " Erros: " + erros;        
   
 	}
 }
